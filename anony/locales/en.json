@@ -1,0 +1,223 @@
+{
+    "add_me": "Add me to your group",
+    "admin_required": "I need the <b>Invite Users via Link</b> permission to work properly.",
+    "admin_cache_wait": "Admin cache can only be refreshed once every <b>10 minutes</b>.",
+    "admin_cache_reloading": "↻ Reloading admin cache...",
+    "admin_cache_reloaded": "✓ Admin cache refreshed successfully!",
+    "auth_added": "✓ Added {0} to the authorized users list.",
+    "auth_removed": "✓ Removed {0} from the authorized users list.",
+    "auth_is_admin": "That user is already an <b>admin</b> and doesn't need to be authorized separately.",
+    "auto_left": "I waited, I watched, I yawned... then I left the video chat.",
+    "auth_list_empty": "No authorized users in this group yet.",
+    "auth_list_header": "<b>Authorized Users</b>",
+    "bl_usage": "<b>Usage:</b>\n<code>/{0} [chat_id|user_id]</code>",
+    "bl_invalid": "Only chat IDs and user IDs are supported.",
+    "bl_already": "This chat is already blacklisted.",
+    "bl_not": "This chat isn't blacklisted.",
+    "bl_added": "🚫 This chat has been blacklisted.",
+    "bl_removed": "✓ This chat has been removed from the blacklist.",
+    "bl_user_notify": "You've been blacklisted from using this bot. Reach out in the <a href={0}>support chat</a> for more info.",
+    "dl_cancel": "Download canceled by {0}.",
+    "dl_complete": "✓ Download completed. Processing file...\n\n<i>Time elapsed:</i> {0}s",
+    "dl_cancelling": "Hang on, cancelling the download now...",
+    "dl_active": "Already downloading that file — mind waiting a moment?",
+    "dl_limit": "Failed to process the file. Maximum download size is <b>200 MB</b>.",
+    "dl_progress": "<b>⬇ Downloading file</b>\n\n<b>Progress:</b> {0} / {1} <i>[{2:.1f}%]</i>\n<b>Speed:</b> {3}/s  •  <b>ETA:</b> {4}",
+    "dl_not_found": "That download has already been cancelled.",
+    "error_no_audio": "Moving to the next track...\n\n<i>No audio source found in the file.</i>",
+    "error_no_call": "<b>No active video chat found.</b>\n\nStart one and try again.",
+    "error_no_file": "Download failed.\n\nIf this keeps happening, report it in the <a href={0}>support chat</a>.",
+    "error_tg_server": "<b>Telegram server error</b>\n\nTelegram is having internal issues — clearing the queue and leaving the video chat.",
+    "error_rtmp": "RTMP streaming isn't supported. Please stop the RTMP stream and start a regular video chat instead.",
+    "eval_error": "⚠️ <b>Error executing snippet</b>\n\n",
+    "eval_inp": "What?",
+    "eval_out": "<b>Output:</b>\n<code>{0}</code>",
+    "end_success": "<b>Stream ended by</b> {1}",
+    "gcast_usage": "Reply to a message to broadcast it.",
+    "gcast_active": "Please wait for the ongoing broadcast to finish.",
+    "gcast_inactive": "Broadcasting is currently inactive.",
+    "gcast_start": "📢 Broadcast started.",
+    "gcast_stop": "⏹ Broadcast stopped.",
+    "gcast_stopped": "Broadcast stopped. <i>(check log group)</i>\n\nSent to {0} groups and {1} users.",
+    "gcast_log": "<b>Broadcast Log</b>\n\n<b>User:</b> <code>{0}</code> | {1}\n<b>Command:</b> <code>{2}</code>\n\nUse /stop_gcast to stop the broadcast.",
+    "gcast_stop_log": "Broadcast stopped by <code>{0}</code> | {1}",
+    "gcast_end": "✓ Broadcasted the message to {0} groups and {1} users.",
+  "help_menu": "<h1>📚 Help Center</h1><p>Welcome! Select a category below to explore my commands.</p><hr/><table><tr><th>Icon</th><th>Category</th><th>Icon</th><th>Category</th></tr><tr><td>🎵</td><td>Play</td><td>🎶</td><td>Playlists</td></tr><tr><td>⚙️</td><td>Admin</td><td>🔑</td><td>Auth</td></tr><tr><td>🚫</td><td>Blacklist</td><td>🌐</td><td>Language</td></tr><tr><td>🏷️</td><td>Stickers</td><td>💬</td><td>Quote</td></tr><tr><td>😂</td><td>Meme</td><td>🛡️</td><td>Sudo</td></tr><tr><td>🛠️</td><td>Moderation</td><td>📊</td><td>Stats</td></tr></table><footer>💡 Tip: All commands work with both / and ! prefixes.</footer>",
+
+  "help_admins": "<h1>⚙️ Admin Commands</h1><p>Control the current voice chat.</p><hr/><h2>▶️ Playback</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/pause</code></td><td>Pause the current stream</td></tr><tr><td><code>/resume</code></td><td>Resume playback</td></tr><tr><td><code>/skip</code></td><td>Skip the current track</td></tr><tr><td><code>/stop</code></td><td>End the stream</td></tr></table><h2>⏩ Seeking</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/seek &lt;seconds&gt;</code></td><td>Jump forward</td></tr><tr><td><code>/seekback &lt;seconds&gt;</code></td><td>Jump backward</td></tr></table><h2>🔄 Cache</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/reload</code></td><td>Reload the admin cache</td></tr></table><hr/><details><summary>🔒 Who can use this?</summary><p>Only chat admins. If you promoted someone recently, run <code>/reload</code> so the cache picks it up.</p></details>",
+
+  "help_auth": "<h1>🔑 Authorized Users</h1><p>Allow trusted members to control playback <b>without</b> giving them admin rights.</p><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/auth</code></td><td>Authorize a user</td></tr><tr><td><code>/unauth</code></td><td>Remove authorization</td></tr><tr><td><code>/authlist</code></td><td>View authorized users</td></tr></table><footer>🎧 Perfect for DJs or trusted friends.</footer>",
+
+  "help_blist": "<h1>🚫 Blacklist</h1><p>Prevent specific chats or users from using the bot.</p><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/blacklist &lt;chat_id|user_id&gt;</code></td><td>Block a chat or user</td></tr><tr><td><code>/unblacklist &lt;chat_id|user_id&gt;</code></td><td>Unblock a chat or user</td></tr></table><details><summary>⚠️ Before you run this</summary><p>Blacklisted entities lose <u>all</u> bot access instantly — there's no soft warning tier.</p></details>",
+
+  "help_lang": "<h1>🌐 Language</h1><p>Change the bot language for your chat.</p><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/lang</code></td><td>Open language selector</td></tr></table><footer>🗺️ Every group can have its own language — settings are per-chat.</footer>",
+
+  "help_ping": "<h1>🏓 General Commands</h1><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/start</code></td><td>Start the bot</td></tr><tr><td><code>/help</code></td><td>Open help menu</td></tr><tr><td><code>/ping</code></td><td>Check latency &amp; system status</td></tr><tr><td><code>/sudolist</code></td><td>Show sudo users</td></tr></table>",
+
+  "help_play": "<h1>🎵 Play Commands</h1><p>Play music using song names, URLs, or replied media.</p><hr/><h2>🎧 Audio</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/play &lt;song&gt;</code></td><td>Play by name</td></tr><tr><td><code>/play &lt;YouTube URL&gt;</code></td><td>Play from link</td></tr><tr><td>Reply + <code>/play</code></td><td>Play from replied audio</td></tr></table><h2>📺 Video</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/vplay &lt;video&gt;</code></td><td>Play video by name/link</td></tr><tr><td>Reply + <code>/vplay</code></td><td>Play from replied video</td></tr></table><h2>🚩 Flags</h2><table bordered><tr><th>Flag</th><th>Effect</th></tr><tr><td><code>-f</code></td><td>Force play immediately</td></tr><tr><td><code>-v</code></td><td>Force video mode</td></tr></table><h2>💡 Example</h2><pre><code class=\"language-bash\">/play -f -v attention</code></pre><details><summary>💡 Tips</summary><ul><li>Search works automatically</li><li>Supports YouTube links</li><li>Supports replied media</li></ul></details>",
+
+  "help_queue": "<h1>📜 Queue</h1><p>Manage the current playlist.</p><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/queue</code></td><td>View queued tracks</td></tr></table>",
+
+  "help_stats": "<h1>📊 Statistics</h1><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/stats</code></td><td>Display bot statistics and resource usage</td></tr></table><details><summary>📈 What's included</summary><ul><li>CPU &amp; RAM usage</li><li>Active voice chats</li><li>Uptime</li><li>Ping</li></ul></details>",
+
+  "help_sudo": "<h1>🛡️ Sudo Commands</h1><hr/><h2>📡 Broadcast</h2><table bordered><tr><th>Command / Flag</th><th>Description</th></tr><tr><td><code>/broadcast</code></td><td>Send a message to all chats</td></tr><tr><td><code>-user</code></td><td>Target users only</td></tr><tr><td><code>-nochat</code></td><td>Exclude chats</td></tr><tr><td><code>-copy</code></td><td>Copy instead of forward</td></tr></table><p><b>Example:</b></p><pre><code class=\"language-bash\">/broadcast -user -copy</code></pre><hr/><h2>⚙️ Management</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/restart</code></td><td>Restart the bot</td></tr><tr><td><code>/logs</code></td><td>Fetch logs</td></tr><tr><td><code>/logger on|off</code></td><td>Toggle logging</td></tr><tr><td><code>/eval</code></td><td>Evaluate Python code</td></tr></table><hr/><h2>👑 Users</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/addsudo</code></td><td>Add a sudo user</td></tr><tr><td><code>/rmsudo</code></td><td>Remove a sudo user</td></tr></table><hr/><h2>📈 Monitoring</h2><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/ac</code></td><td>Active chats</td></tr><tr><td><code>/activevc</code></td><td>Active voice chats</td></tr></table>",
+
+  "help_moderation": "<h1>🛠️ Moderation</h1><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/ban</code></td><td>Ban a user</td></tr><tr><td><code>/unban</code></td><td>Unban a user</td></tr><tr><td><code>/modhelp</code></td><td>Moderation help</td></tr><tr><td><code>/tgm</code></td><td>Telegram moderation tools</td></tr></table><footer>👮 Manage who can use the bot in your group.</footer>",
+
+  "help_playlist": "<h1>🎶 Playlists</h1><p>Create and manage custom playlists.</p><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/pl {name}</code></td><td>Play a playlist</td></tr><tr><td><code>/pl new {name}</code></td><td>Create a playlist</td></tr><tr><td><code>/add {name}</code></td><td>Add a track</td></tr><tr><td><code>/rm {playlist} {position}</code></td><td>Remove a track</td></tr><tr><td><code>/pplay {playlist}</code></td><td>Play playlist</td></tr><tr><td><code>/pshuffle {playlist}</code></td><td>Shuffle playlist</td></tr></table>",
+
+  "help_kang": "<h1>🏷️ Sticker Tools</h1><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/kang</code></td><td>Steal a sticker</td></tr><tr><td><code>/kang {emoji}</code></td><td>Steal with custom emoji</td></tr><tr><td><code>/delsticker</code></td><td>Delete a sticker</td></tr><tr><td><code>/stickerinfo</code></td><td>Get sticker info</td></tr><tr><td><code>/get_sticker</code></td><td>Extract sticker file</td></tr></table><details><summary>📦 Supported Formats</summary><table bordered><tr><th>Format</th><th>Type</th></tr><tr><td>PNG</td><td>Static</td></tr><tr><td>JPG</td><td>Static</td></tr><tr><td>WEBP</td><td>Static</td></tr><tr><td>TGS</td><td>Animated</td></tr><tr><td>WEBM</td><td>Video</td></tr></table><p><b>Max size:</b> 10 MB</p></details>",
+
+  "help_quote": "<h1>💬 Quote Stickers</h1><p>Create beautiful quote stickers.</p><hr/><table bordered><tr><th>Command</th><th>Description</th></tr><tr><td><code>/q</code></td><td>Quote the replied message</td></tr><tr><td><code>/q {number}</code></td><td>Quote a range of messages</td></tr><tr><td><code>/q r</code></td><td>Quote as reply-style</td></tr><tr><td><code>/q r {number}</code></td><td>Quote range, reply-style</td></tr></table><h2>✨ Features</h2><ul><li>✅ Text</li><li>✅ Photos</li><li>✅ Stickers</li><li>✅ Formatting</li><li>✅ Profile pictures</li></ul><footer>📏 Maximum 10 messages per quote.</footer>",
+
+  "help_meme": "<h1>😂 Meme Stickers</h1><p>Reply to any sticker and create a meme.</p><hr/><h2>🖊️ Command</h2><pre><code class=\"language-bash\">/meme top text | bottom text</code></pre><h2>🎨 Editor Options</h2><table bordered><tr><th>Option</th><th>Option</th><th>Option</th></tr><tr><td>Font</td><td>Color</td><td>Outline</td></tr><tr><td>Shadow</td><td>Blur</td><td>Opacity</td></tr><tr><td>Rotation</td><td>Background</td><td>Position</td></tr></table><h2>🔘 Buttons</h2><table bordered><tr><th>Button</th><th>Action</th></tr><tr><td>✅ Save Sticker</td><td>Save to your pack</td></tr><tr><td>🎒 Kang Sticker</td><td>Add to bot's pack</td></tr><tr><td>🗑 Discard</td><td>Cancel editing</td></tr></table>",
+    "lang_choose": "Please choose the language you'd like to set for this chat:",
+    "lang_change": "Changing this chat's language to: <b>{0}</b>",
+    "lang_changed": "This chat's language has been changed to: <i>{0}</i>",
+    "lang_same": "This chat's language is already set to: <b>{0}</b>",
+    "log_fetch": "Fetching logs...",
+    "log_not_found": "Log file doesn't exist.",
+    "log_sent": "Log file of {0}",
+    "log_chat": "<b>New Chat Log</b>\n\n<b>Chat:</b> <code>{0}</code> | {1}\n<b>User:</b> <code>{2}</code> | {3}",
+    "log_user": "<b>New User Log</b>\n\n<b>ID:</b> <code>{0}</code>\n<b>Name:</b> {1} | {2}",
+    "logger_on": "✓ Logger enabled.",
+    "logger_off": "✓ Logger disabled.",
+    "logger_usage": "<b>Usage:</b>\n<code>/{0} [on|off]</code>",
+    "loop_count": "Current loop count: <b>{0}</b>",
+    "loop_on": "loop is on now set the count example: <code>/loop 10</code>",
+    "loop_set": "✓ Loop count set to: <b>{0}</b>",
+    "loop_off": "Loop disabled.",
+    "loop_usage": "<b>Usage:</b>\n<code>/loop [count]</code>\n<code>/loop off</code>",
+    "not_playing": "I'm not streaming in the video chat right now.",
+    "not_playing": "# 🎵 Nothing Playing\n\n> There isn't an active stream in this voice chat.",
+
+"pinging": "# 🏓 Pinging...\n\n```text\nCollecting system statistics...\n```",
+
+"ping_pong": "# 🏓 Pong!\n\n## Connection\n\n```text\nLatency   : {0} ms\nUptime    : {1}\nPyTgCalls : {5} ms\n```\n\n---\n\n## System\n\n```text\nCPU   : {2}%\nRAM   : {3}%\nDisk  : {4}%\n```",
+
+"play_admin": "# 🔒 Admin Only Mode\n\n> Only chat administrators can start music playback.",
+
+"play_banned": "# 🚫 Assistant Blocked\n\nThe assistant account required for playback is banned in this chat.\n\n```text\nID       : {1}\nName     : {2}\nUsername : {3}\n```\n\n> Unban **{0}** to continue using music playback.",
+
+"play_media": "# ▶ Now Playing\n\n## Track\n\n**[{1}]({0})**\n\n```text\nDuration     : {2} min\nRequested By : {3}\n```",
+
+"play_log": "# 📜 Playback Log\n\n## Chat\n\n```text\nID   : {1}\nName : {2}\n```\n\n## User\n\n```text\nID   : {3}\nName : {4}\n```\n\n## Track\n\n```text\nTitle    : {6}\nDuration : {7} min\n```\n\n> Message: {5}",
+
+"play_queued": "# ➕ Added to Queue\n\n**[{2}]({1})**\n\n```text\nPosition     : {0}\nDuration     : {3} min\nRequested By : {4}\n```",
+
+"play_usage": "# ▶ Usage\n\n```text\n/play attention\n/play https://youtu.be/...\n```\n\n> You can also reply to an audio or video file with `/play`.",
+    "play_seeking": "# ⏩ Seeking Stream\n\n> Jumping to the requested position...",
+
+"play_again": "# 🔁 Restarting Stream\n\n> Replaying the current media...",
+
+"play_now": "▶ Play Now",
+
+"play_next": "# ⏭ Preparing Next Track\n\n> Downloading the next track from the queue...",
+
+"play_invite": "# 👤 Inviting Assistant\n\n> Please wait...\n>\n> Inviting **{0}** to the chat.",
+
+"play_searching": "# 🔎 Searching\n\n> Looking for your request...",
+
+"play_downloading": "# ⬇ Downloading\n\n> Fetching the media...",
+
+"play_paused": "# ⏸ Stream Paused\n\n> **By:** {0}",
+
+"play_resumed": "# ▶ Stream Resumed\n\n> **By:** {0}",
+
+"play_replayed": "# 🔁 Stream Restarted\n\n> **By:** {0}",
+
+"play_skipped": "# ⏭ Track Skipped\n\n> **By:** {0}",
+
+"play_stopped": "# ⏹ Playback Stopped\n\n> **By:** {0}",
+
+"play_seeked": "# ⏩ Stream Seeked\n\n> Jumped **{0}** seconds.\n>\n> Started from **{1}s**.\n>\n> **Requested by:** {2}",
+
+"play_expired": "# ⚠️ Action Expired\n\n> This button is no longer valid.",
+
+"play_unsupported": "# 🚫 Unsupported Media\n\n> Live streams cannot be played.",
+
+"play_already_paused": "# ℹ️ Already Resumed\n\n> The stream is currently playing.",
+
+"play_not_paused": "# ℹ️ Already Paused\n\n> The stream is already paused.",
+
+"play_seek_usage": "# ⏩ Seek Command\n\n```text\n/{0} <seconds>\n```\n\n### Example\n\n```text\n/{0} 15\n```",
+
+"play_seek_no_dur": "# ❌ Duration Unavailable\n\n> Couldn't determine the duration of the current stream.",
+
+"play_seek_min": "# ⚠️ Invalid Seek Time\n\n> Minimum seek time is **10 seconds**.",
+
+"play_duration_limit": "# 🚫 Duration Limit\n\n> Media longer than **{0} minutes** cannot be played.",
+
+"play_queue_full": "# 📋 Queue Full\n\n> Maximum queue size (**{0}**) has been reached.\n>\n> Wait until some tracks finish before adding more.",
+
+"play_invite_error": "# ❌ Assistant Invite Failed\n\n> **Reason**\n\n```text\n{0}\n```",
+
+"play_not_found": "# ❌ Nothing Found\n\n> Failed to process your request.\n>\n> If this continues, visit the support chat:\n>\n> {0}",
+
+"play_chat_invalid": "# 🚫 Unsupported Chat\n\n> This bot works only in **Supergroups**.\n>\n> Convert this group into a Supergroup by making the chat history visible once.\n>\n> Leaving chat...",
+
+"play_user_invalid": "# 👤 Anonymous Admin Detected\n\n> Switch back to your personal account and try again.",
+    "playlist_fetch": "📜 Fetching the playlist, please hold on...",
+    "playlist_error": "Something went wrong while fetching the playlist.",
+    "playlist_queued": "<b>✓ Added {0} tracks from the playlist to the queue:</b>\n\n",
+    "queue_curr": "<b>▶ Currently playing</b>\n\n<b>Title:</b> <a href={0}>{1}</a>\n<b>Duration:</b> {2}\n<b>Requested by:</b> {3}\n\n",
+    "queue_item": "<b>{0}.</b> {1}\n     — {2} min\n\n",
+    "queue_fetching": "📜 Fetching queue...",
+    "restarting": "♻ Restarting...",
+    "restarted": "Restart in progress. Don't worry — it'll only take a few seconds... maybe.",
+    "start_pm": "# 👋 Welcome, {0}\n\nI'm **{1}** — your modern voice chat music assistant.\n\n> Stream music, manage queues, create playlists, and enjoy seamless playback.\n\n---\n\n### ✨ Quick Start\n\n```text\n• Add me to a group\n• Start a Voice Chat\n• Use /play <song>\n```\n\n<details>\n<summary>Need help?</summary>\n\nTap **Help** below to discover all commands and features.\n\n</details>",
+
+"start_gp": "# 🎵 Ready to Play\n\nI'm **{0}**.\n\n> Your voice chat is ready for high-quality music streaming.\n\n---\n\n```text\n/play song\n/vplay video\n/queue\n```\n\n<details>\n<summary>Tips</summary>\n\nInvite the assistant if requested, then start enjoying music.\n\n</details>",
+
+"start_settings": "# ⚙️ Chat Settings\n\nConfigure **{0}** using the options below.\n\n---\n\n```text\n🎵 Playback Mode\n👮 Admin Mode\n🗑 Command Cleanup\n🌐 Language\n```\n\n> Changes are applied instantly.",
+    "stats_fetching": "📊 Fetching stats...",
+    "stats_sudo": "\n\n<b>Modules:</b> {0}\n<b>Platform:</b> {1}\n<b>RAM usage:</b> <code>{2}MB | {3}GB</code>\n<b>CPU usage:</b> <code>{4}% ({5} cores)</code>\n<b>Storage:</b> <code>{6}GB | {7}GB</code>\n\n<b>Python:</b> <code>v{8}</code>\n<b>Pyrogram:</b> <code>v{9}</code>\n<b>PyTgCalls:</b> <code>v{10}</code>",
+    "stats_user": "<b>{0} Stats</b>\n\n<b>Assistants:</b> {1}\n<b>Auto leave:</b> {2}\n\n<b>Blocked chats:</b> {3}\n<b>Blocked users:</b> {4}\n<b>Sudo users:</b> {5}\n\n<b>Served chats:</b> {6}\n<b>Served users:</b> {7}",
+    "sudo_already": "{0} is already a sudo user.",
+    "sudo_added": "✓ Added {0} to the sudo users list.",
+    "sudo_not": "{0} isn't a sudo user.",
+    "sudo_removed": "✓ Removed {0} from the sudo users list.",
+    "sudo_fetching": "Fetching sudo users list...",
+    "sudo_owner": "<b>Owner:</b>\n- {0}\n\n",
+    "sudo_users": "<b>Sudo Users</b>",
+    "user_not_admin": "Oh sure, go ahead and manage the video chat... oh wait, you're not an admin.",
+    "user_no_perms": "You? Manage the video chat? Not with those permissions, sweetie.",
+    "user_not_found": "I'll need a user ID — or you could just reply to their message.",
+    "vc_empty": "There aren't any active streams on the bot right now.",
+    "vc_count": "Active streams on the bot: <b>{0}</b>",
+    "vc_fetching": "Fetching list of active streams...",
+    "vc_list": "<b>Active Streams</b>",
+    "prev": "Prev",
+    "next": "Next",
+    "back": "Back",
+    "backward": "Backward",
+    "cancel": "Cancel",
+    "channel": "Channel",
+    "close": "Close",
+    "forward": "Forward",
+    "help": "Help",
+    "language": "Language",
+    "paused": "Stream Paused",
+    "cmd_delete": "Command Delete",
+    "play_mode": "Admin Only Play",
+    "playing": "Playing",
+    "processing": "Processing...",
+    "replayed": "Stream Replayed",
+    "skipped": "Stream Skipped",
+    "stopped": "Stream Ended",
+    "source": "Source",
+    "support": "Support",
+    "help_0": "Admins",
+    "help_1": "Auth",
+    "help_2": "Blacklist",
+    "help_3": "Language",
+    "help_4": "General",
+    "help_5": "Play",
+    "help_6": "Queue",
+    "help_7": "Stats",
+    "help_8": "Sudoers",
+    "help_9": "Moderation",
+    "help_10": "Kang",
+    "help_11": "Quote",
+    "help_12": "Meme"
+}
