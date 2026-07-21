@@ -1,7 +1,3 @@
-# Copyright (c) 2025 AnonymousX1025
-# Licensed under the MIT License.
-# This file is part of AnonXMusic
-
 import asyncio
 from pyrogram import enums, filters, types
 from pyrogram.types import ReplyParameters
